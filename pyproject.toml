@@ -1,0 +1,37 @@
+[project]
+name = "counterfeit-hotspots"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Salaudeen Sheriffdeen", email = "sheriffdeensalaudeen27@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.0",
+    "folium>=0.20.0",
+    "fpdf2>=2.8.9",
+    "lightgbm>=4.7.0",
+    "numpy>=2.5.4",
+    "openai>=3.41.0",
+    "pandas>=3.1.0",
+    "psycopg2-binary>=2.9.13",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.9.1",
+    "sqlalchemy>=2.1.6",
+    "streamlit>=1.66.1",
+    "streamlit-folium>=0.27.4",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+counterfeit-hotspots = "counterfeit_hotspots:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
